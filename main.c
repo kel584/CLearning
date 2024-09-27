@@ -2,10 +2,12 @@
 #include "io/io.h"
 #include "encryption/encryption.h"
 
+
 int main() {
 getInput();
-char* content = ReadInputFile(filename);
-
-CreateOutputFile();
+char *printString = stringToBinary(ReadInputFile(filename));
+CreateOutputFile(printString);
+    
+return 0;
 
 }

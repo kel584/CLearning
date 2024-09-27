@@ -4,19 +4,20 @@
 #include <string.h>
 #include <stdbool.h>
 #include <stdlib.h>
-static char command[200];
-static char filename[50];
-static char method[50];
-static char outputfile[50];
-static char outputStringBuffer[100];
-static char txtstr[50] = ".txt";
-static char Buffer[100];
-static char *inputStringBuffer = NULL;
-static size_t contentSize = 0;
-FILE *fptr;
+
+extern char command[200]; 
+extern char filename[50];
+extern char method[50];
+extern char outputfile[50];
+extern char outputStringBuffer[100];
+extern char txtstr[50];
+extern char Buffer[100];
+extern char *inputStringBuffer;
+extern size_t contentSize;
+extern FILE *fptr;
 
 int getSelection();
-void CreateOutputFile();
+void CreateOutputFile(char* encryptedtext);
 void getInput();
 char* ReadInputFile(const char *filename);
 bool checkValidInput(const char *filename);
