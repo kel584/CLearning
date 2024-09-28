@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include "io/io.h"
 #include "encryption/encryption.h"
+#include "ui/ui.h"
 
 
 int main() {
+PrintWelcome();
 int len;
 getInput();
 char *binarystring = stringToBinary(ReadInputFile(filename));

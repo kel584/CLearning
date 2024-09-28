@@ -17,7 +17,7 @@ int getSelection(){
 
 void getInput(){
     while(1){
-        printf("Enter command: ");
+        printf("Enter command: \n");
         fgets(command, sizeof(command), stdin); //saves input to command variable
         command[strcspn(command, "\n")] = '\0'; //replaces "\n" with \0
 
