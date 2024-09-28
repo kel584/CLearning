@@ -17,7 +17,7 @@ int getSelection(){
 
 void getInput(){
     while(1){
-        printf("Enter command: \n");
+        printf("Enter command: ");
         fgets(command, sizeof(command), stdin); //saves input to command variable
         command[strcspn(command, "\n")] = '\0'; //replaces "\n" with \0
 
@@ -26,7 +26,7 @@ void getInput(){
             printf("%s, %s, %s", filename, method, outputfile); //prints matched items for debugging
             break;
         } else{
-            printf("Invalid command. Please use the format: -f filename -m method -o outputfile\n");
+            printf("\nInvalid command. Please use the format: -f filename -m method -o outputfile\n");
         }
     }
 }
