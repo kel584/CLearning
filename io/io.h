@@ -4,6 +4,7 @@
 #include <string.h>
 #include <stdbool.h>
 #include <stdlib.h>
+#include <time.h>
 
 extern char command[200]; 
 extern char filename[50];
@@ -15,6 +16,7 @@ extern char Buffer[100];
 extern char *inputStringBuffer;
 extern size_t contentSize;
 extern FILE *fptr;
+
 
 int getSelection();
 void CreateOutputFile(char* encryptedtext);
